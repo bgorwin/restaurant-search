@@ -4,7 +4,6 @@ import './App.css';
 import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
 
-function App() {
 
   const business = {
     imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
@@ -27,14 +26,21 @@ function App() {
     business
   ];
 
+  class App extends React.Component {
+  searchYelp(term, location, sortBy){
+    console.log(`You are searching for  ${term}, ${location} and ${sortBy}`);
+  }
 
-  return (
-    <div className="App">
-      <h1>Restaurant Search!</h1>
-      <SearchBar />
-      <BusinessList businesses={businesses}/>
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <h1>Restaurant Search!</h1>
+        <SearchBar searchYelp={this.searchYelp}/>
+        <BusinessList businesses={businesses}/>
+      </div>
+    );
+  }
+  
 }
 
 export default App;
