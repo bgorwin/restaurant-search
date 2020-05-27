@@ -4,8 +4,6 @@ import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
 import Yelp from '../../util/Yelp';
 
-console.log(process.env.REACT_APP_YELP_API_KEY);
-
 class App extends React.Component {
 	constructor(props) {
 		super(props);
@@ -26,7 +24,7 @@ class App extends React.Component {
 		console.log(process.env);
 		return (
 			<div className="App">
-				<h1>Restaurant Search!</h1>
+				{/* <h1>Restaurant Search!</h1> */}
 				<SearchBar searchYelp={this.searchYelp} />
 				<BusinessList businesses={this.state.businesses} />
 			</div>
