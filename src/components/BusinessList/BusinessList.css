@@ -4,3 +4,7 @@
 	flex-wrap: wrap;
 	margin: 4.4rem 15%;
 }
+
+#title {
+	font-family: 'Raleway', sans-serif;
+}
