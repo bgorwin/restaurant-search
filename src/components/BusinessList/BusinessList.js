@@ -9,6 +9,7 @@ class BusinessList extends React.Component {
 				{this.props.businesses.map((business) => {
 					return <Business key={business.id} business={business} />;
 				})}
+				<h3 id="title">SEARCH FOR BUSINESSES IN THE CITY OF YOUR CHOICE</h3>
 			</div>
 		);
 	}
