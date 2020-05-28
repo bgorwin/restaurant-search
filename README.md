@@ -10,3 +10,4 @@ This project utilizes:
 
 - React
 - Yelp API
+- Material-UI
