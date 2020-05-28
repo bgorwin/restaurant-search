@@ -17,8 +17,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	title: {
 		flexGrow: 1,
-		fontFamily: 'Raleway',
-		textAlign: 'center'
+		fontFamily: 'Raleway'
 	},
 	background: {
 		backgroundColor: red[500]
