@@ -1,8 +1,14 @@
 import React from 'react';
 import './BusinessList.css';
 import Business from '../Business/Business';
+import CircularIndeterminate from '../Loader/Loader';
 
 class BusinessList extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = { isLoading: true };
+	}
+
 	render() {
 		return (
 			<div className="BusinessList">
